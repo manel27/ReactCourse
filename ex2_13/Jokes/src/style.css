@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #DCD7D7;
+}
+
+.jokeContainer{
+  border: solid red;
+  text-align: center;
+}
