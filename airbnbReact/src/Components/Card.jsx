@@ -1,6 +1,5 @@
 import React from "react"
-import katie from "../images/katie-zaferes.png"
-import star from "../images/star.png"
+import star from "../../public/images/star.png"
 
 export default function Card(props) {
     return (
