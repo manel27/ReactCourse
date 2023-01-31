@@ -29,22 +29,34 @@ nav > span {
   letter-spacing: -0.075em;
 }
 
+.fullCardContainer {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .cardContainer{
   display:flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding-bottom: 30px;
 }
 
+.breakLine{
+  border: 1px solid #F5F5F5;
+  width: 90%;
 
+}
 
 .imgContainer{
   width: 300px;
   height: 300px;
   overflow: hidden;
   text-align: center;
-	margin:0 auto;
   border-radius: 9px;
+  margin-left:2%;
+  margin-right: 2%;
 }
 
 .cardImg {
@@ -52,4 +64,23 @@ nav > span {
   min-width:100%;
   max-width:none;
   margin:0 -100%;
+}
+
+.cardDetails{
+  max-width: 70%;
+  padding:0px;
+}
+
+.localLogo{
+  height:20%;
+}
+
+.cardCountry{
+  letter-spacing: 0.17em;
+}
+
+.googleMapsLink{
+  color: gray;
+  text-decoration: underline;
+  border-bottom: 1px;
 }

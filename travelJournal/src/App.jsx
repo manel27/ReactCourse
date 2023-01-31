@@ -5,12 +5,24 @@ import Card from "./Components/Card"
 
 
 
+function CardRender(card, size){
+  if (card.id != size) {
+    return(// ver tamanho da data e só adicionar a todos excetuando o ultimo
+      <div className = "fullCardContainer">
+        <Card key = {card.id} item = {card}/> 
+        <div className = "breakLine">
+        </div>
+      </div>
+  )}
+    else {
+      return(<Card key = {card.id} item = {card}/>)
+    }
+}
+
 function App() {
   const cardComponents = data.map(
-    card => // ver tamanho da data e só adicionar a todos excetuando o ultimo
-    <Card key = {card.id} item = {card}/>
+    card => CardRender(card, Object.keys(data).length)
   )
-
   return (
     <div className="App">
       <Navbar/>
